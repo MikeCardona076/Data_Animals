@@ -6,4 +6,6 @@ class Citas(models.Model):
     notas     = models.TextField()
     clinica    = models.CharField(max_length=20)
     horario    = models.DateField()
+    def __str__(self):
+        return self.nombre_mascota
     

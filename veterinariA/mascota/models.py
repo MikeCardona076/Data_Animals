@@ -9,6 +9,11 @@ class Mascota(models.Model):
     edad     = models.IntegerField()
     vacunas_mascota  = models.TextField()
     especie  = models.CharField(max_length=20, default='SOME STRING')
+
+    def __str__(self):
+        return self.nombre_mascota
+
+    
     
    
     
